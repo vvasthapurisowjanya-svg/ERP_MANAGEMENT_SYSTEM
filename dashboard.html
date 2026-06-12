@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ERP Dashboard</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <h2>ERP System</h2>
+        <ul>
+            <li>
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="modules/users/user.html">
+                    Users
+                </a>
+            </li>
+            <li>
+                <a href="modules/products/product.html">
+                    Products
+                </a>
+            </li>
+           <li>
+    <a href="modules/suppliers/supplier.html">
+        Suppliers
+    </a>
+</li>
+<li>
+    <a href="modules/inventory/inventory.html">
+        Inventory
+    </a>
+</li>
+        </ul>
+        <div class="profile-section">
+    <div class="profile-info">
+        <h4 id="profileName">User</h4>
+        <p id="profileRole">Role</p>
+    </div>
+    <button class="logout-btn"
+            onclick="logout()">
+        Logout
+    </button>
+</div>
+    </div>
+    <div class="main-content">
+        <h1>ERP Dashboard</h1>
+        <div class="cards">
+  
+    <div class="card">
+        <h3>Total Users</h3>
+        <h1 id="userCount">0</h1>
+    </div>
+    <div class="card">
+        <h3>Total Products</h3>
+        <h1 id="productCount">0</h1>
+    </div>
+    <div class="card">
+        <h3>Total Suppliers</h3>
+        <h1 id="supplierCount">0</h1>
+    </div>
+    <div class="card">
+        <h3>Total Inventory</h3>
+        <h1 id="inventoryCount">0</h1>
+    </div>
+</div>
+    </div>
+</div>
+<script src="assets/js/dashboard.js"></script>
+<script src="assets/js/profile.js"></script>
+</body>
+</html>

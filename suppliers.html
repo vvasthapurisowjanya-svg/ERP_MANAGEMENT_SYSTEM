@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Supplier Management</title>
+    <link rel="stylesheet"
+          href="../../assets/css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <h2>ERP System</h2>
+        <ul>
+            <li>
+                <a href="../../dashboard.html">
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="../users/user.html">
+                    Users
+                </a>
+            </li>
+            <li>
+                <a href="../products/product.html">
+                    Products
+                </a>
+            </li>
+            <li>
+                <a href="../suppliers/supplier.html">
+                    Suppliers
+                </a>
+            </li>
+            <li>
+                <a  href="../inventory/inventory.html">
+                    Inventory
+                </a>
+            </li>
+        </ul>
+        <div class="profile-section">
+    <h4 id="profileName">User</h4>
+    <p id="profileRole">Role</p>
+    <button onclick="logout()">
+        Logout
+    </button>
+</div>
+    </div>
+    <div class="main-content">
+        <h1>Supplier Management</h1>
+        <div class="form-container">
+            <input
+                type="text"
+                id="supplierName"
+                placeholder="Supplier Name">
+            <input
+                type="email"
+                id="email"
+                placeholder="Email">
+            <input
+                type="text"
+                id="phone"
+                placeholder="Phone Number">
+            <input
+                type="text"
+                id="address"
+                placeholder="Address">
+            <button
+                id="supplierBtn"
+                onclick="saveSupplier()">
+                Save Supplier
+            </button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="supplierTable">
+            </tbody>
+        </table>
+    </div>
+</div>
+<script
+src="../../assets/js/supplier.js">
+</script>
+<script src="../../assets/js/profile.js"></script>
+</body>
+</html>

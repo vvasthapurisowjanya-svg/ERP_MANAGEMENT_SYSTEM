@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Management</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+   
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <h2>ERP System</h2>
+        <ul>
+    <li><a href="../../dashboard.html">Dashboard</a></li>
+    <li><a href="../users/user.html">Users</a></li>
+    <li><a href="../products/product.html">Products</a></li>
+    <li><a href="../suppliers/supplier.html">Suppliers</a></li>
+    <li><a href="../inventory/inventory.html">Inventory</a></li>
+</ul>
+<div class="profile-section">
+    <div class="profile-info">
+        <h4 id="profileName"></h4>
+        <p id="profileRole"></p>
+    </div>
+    <button
+        class="logout-btn"
+        onclick="logout()">
+        Logout
+    </button>
+</div>
+    </div> 
+    <div class="main-content" id="adminSection">
+        <h1>User Management</h1>
+        <div class="form-container">
+            <input type="text" id="username" placeholder="Username">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <input type="text" id="role" placeholder="Role">
+            <button id="saveBtn" onclick="saveUser()">
+             Save User
+            </button>
+        </div>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="userTable">
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="../../assets/js/auth.js"></script>
+<script src="../../assets/js/profile.js"></script>
+<script src="../../assets/js/app.js"></script>
+</body>
+</html>
+Login.html :
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ERP Login</title>
+   <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+<div class="auth-container">
+    <div class="auth-card">
+        <h2>ERP Inventory System</h2>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">
+         Login
+        </button>
+        <p>
+            Don't have an account?
+            <a href="register.html">Register</a>
+        </p>
+    </div>
+</div>
+<script src="../../assets/js/login.js"></script>
+</body>
+</html>
+Register.html: 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+<div class="auth-container">
+    <div class="auth-card">
+        <h2>Create Account</h2>
+        <input type="text" placeholder="Username">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button onclick="window.location.href='login.html'">
+            Register
+        </button>
+        <p>
+            Already have account?
+            <a href="login.html">Login</a>
+        </p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Management</title>
+    <link rel="stylesheet"
+          href="../../assets/css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <h2>ERP System</h2>
+        <ul>
+            <li>
+                <a href="../../dashboard.html">
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="../users/user.html">
+                    Users
+                </a>
+            </li>
+            <li>
+                <a href="../products/product.html">
+                    Products
+                </a>
+            </li>
+            <li>
+                <a href="../suppliers/supplier.html">
+                    Suppliers
+                </a>
+            </li>
+            <li>
+                <a href="../inventory/inventory.html">
+                    Inventory
+                </a>
+            </li>
+        </ul>
+        <div class="profile-section">
+    <h4 id="profileName">User</h4>
+    <p id="profileRole">Role</p>
+    <button onclick="logout()">
+        Logout
+    </button>
+</div>
+    </div>
+    <div class="main-content">
+        <h1>Inventory Management</h1>
+        <div class="form-container">
+            <input type="text"
+                   id="productName"
+                   placeholder="Product Name">
+            <input type="number"
+                   id="quantity"
+                   placeholder="Quantity">
+            <input type="text"
+                   id="warehouseLocation"
+                   placeholder="Warehouse Location">
+            <button
+                id="inventoryBtn"
+                onclick="saveInventory()">
+                Save Inventory
+            </button>
+        </div>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Warehouse</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody id="inventoryTable">
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="../../assets/js/inventory.js"></script>
+<script src="../../assets/js/profile.js"></script>
+</body>
+</html>
+
+
+
+

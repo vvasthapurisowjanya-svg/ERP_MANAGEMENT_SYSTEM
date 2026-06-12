@@ -1,0 +1,63 @@
+Product.html:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Management</title>
+   <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <h2>ERP System</h2>
+        <ul>
+            <li><a href="../../dashboard.html">Dashboard</a></li>
+            <li><a href="../users/user.html">Users</a></li>
+            <li><a href="product.html">Products</a></li>
+      
+            <li><a href="../suppliers/supplier.html">Suppliers</a></li>
+            <li><a href="../inventory/inventory.html">Inventory</a></li>
+        </ul>
+        <div class="profile-section">
+            <h4 id="profileName">User</h4>
+            <p id="profileRole">Role</p>
+            <button onclick="logout()">
+                Logout
+            </button>
+        </div>
+    </div>
+    <div class="main-content">
+        <h1>Product Management</h1>
+        
+        <div class="form-container">
+            <input type="text" id="productName" placeholder="Product Name">
+            <input type="text" id="category" placeholder="Category">
+            <input type="text" id="description" placeholder="Description">
+            <input type="number" id="price" placeholder="Price">
+            <input type="number" id="reorderLevel" placeholder="Reorder Level">
+            <br>
+            
+            <button id="productBtn" onclick="saveProduct()">
+                Save Product
+            </button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Reorder Level</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="productTable">
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="../../assets/js/product.js"></script>
+<script src="../../assets/js/profile.js"></script>
+</body>
+</html>
+
